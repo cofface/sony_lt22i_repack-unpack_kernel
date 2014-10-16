@@ -1,6 +1,10 @@
 sudo apt-get install p7zip
 sudo apt-get install file
 
+
+unpack cpio file commandline: cpio -i -F ../ramdisk.cpio
+repack cpio file commandline: find . | cpio -o -H newc > ../ramdisk.cpio
+
 Thanks:
 DooMLoRD
 Mostafa
