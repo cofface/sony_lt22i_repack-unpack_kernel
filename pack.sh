@@ -1,5 +1,9 @@
 echo "packing..."
 
+if [ -e kernel.elf-new ]; then
+rm kernel.elf-new;
+fi
+
 cd ramdisk
 find|cpio -o -H newc|gzip >../kernel.elf-new_ramdisk.gz
 cd ..
