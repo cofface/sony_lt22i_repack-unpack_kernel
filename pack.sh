@@ -17,6 +17,4 @@ cat kernel.elf-cert|dd of=kernel.elf-new bs=1 seek=148 count=1106 conv=notrunc 2
 rm kernel.elf-new_ramdisk.gz
 rm kernel.elf-dumped_cert
 
-mkdir output
-mv kernel.elf-new output/kernel.elf-new
 echo "Done!"
